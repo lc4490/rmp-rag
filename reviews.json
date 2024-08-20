@@ -1,0 +1,65 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. John Smith",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Dr. Smith explains complex concepts very well, but sometimes the pace is a bit fast."
+      },
+      {
+        "professor": "Dr. Emily Brown",
+        "subject": "Mathematics",
+        "stars": 5,
+        "review": "Dr. Brown is an excellent professor. Her lectures are clear, and she is always willing to help students."
+      },
+      {
+        "professor": "Dr. Alan Thompson",
+        "subject": "Computer Science",
+        "stars": 3,
+        "review": "Dr. Thompson is knowledgeable, but his teaching style is a bit disorganized. Office hours are helpful."
+      },
+      {
+        "professor": "Dr. Susan Lee",
+        "subject": "Chemistry",
+        "stars": 2,
+        "review": "Dr. Lee is very strict and her exams are extremely difficult. The material is hard to understand."
+      },
+      {
+        "professor": "Dr. Michael Johnson",
+        "subject": "History",
+        "stars": 5,
+        "review": "Dr. Johnson's passion for history makes his classes engaging and enjoyable. Highly recommended!"
+      },
+      {
+        "professor": "Dr. Karen White",
+        "subject": "English Literature",
+        "stars": 4,
+        "review": "Dr. White is very knowledgeable, but her grading can be tough. Participation in class discussions is crucial."
+      },
+      {
+        "professor": "Dr. Robert Davis",
+        "subject": "Economics",
+        "stars": 3,
+        "review": "Dr. Davis is an average professor. The lectures can be a bit dry, but the content is solid."
+      },
+      {
+        "professor": "Dr. Anna Miller",
+        "subject": "Biology",
+        "stars": 4,
+        "review": "Dr. Miller is very approachable and makes the subject interesting. Labs are well-organized."
+      },
+      {
+        "professor": "Dr. Christopher Wilson",
+        "subject": "Philosophy",
+        "stars": 5,
+        "review": "Dr. Wilson encourages critical thinking and his lectures are thought-provoking. A great professor."
+      },
+      {
+        "professor": "Dr. Elizabeth Moore",
+        "subject": "Psychology",
+        "stars": 2,
+        "review": "Dr. Moore's lectures are a bit monotonous and it's difficult to stay engaged. The material is challenging."
+      }
+    ]
+  }
+  
