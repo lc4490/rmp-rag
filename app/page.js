@@ -1,13 +1,14 @@
-// Chris Jin 
-
+// Jack Ma
 "use client"
 import { useState, useRef, useEffect, useMemo } from "react";
-import { TextField, Box, Stack, Button, Paper, Typography, Container, ThemeProvider, createTheme, CssBaseline, IconButton, Tooltip } from "@mui/material";
+import { TextField, Box, Stack, Button, Paper, Typography, Container, ThemeProvider, createTheme, CssBaseline, IconButton, Tooltip, Avatar } from "@mui/material";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import SendIcon from '@mui/icons-material/Send';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import PersonIcon from '@mui/icons-material/Person';
 
 // Custom theme 
 const getTheme = (mode) => createTheme({
@@ -143,10 +144,15 @@ export default function Home() {
                   mb: 2,
                 }}
               >
+                {message.role === "assistant" && (
+                  <Avatar sx = {{ bgcolor: "primary.main", mr: 1}}>
+                    <SmartToyIcon/>
+                  </Avatar>
+                )}
                 <Paper 
                   elevation={1}
                   sx={{
-                    maxWidth: '80%',
+                    maxWidth: 'calc(80% - 40px)',
                     p: 2,
                     bgcolor: message.role === 'assistant' ? 'primary.main' : 'secondary.main',
                     color: message.role === 'assistant' ? 'primary.contrastText' : 'secondary.contrastText',
@@ -180,6 +186,11 @@ export default function Home() {
                     {message.content}
                   </ReactMarkdown>
                 </Paper>
+                {message.role === "user" && (
+                  <Avatar sx={{ bgcolor: "secondary.main", ml: 1}}>
+                    <PersonIcon/>
+                  </Avatar>
+                )}
               </Box>
             ))}
             <div ref={messagesEndRef} />
